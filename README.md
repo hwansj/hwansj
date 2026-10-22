@@ -1,10 +1,8 @@
-## 정세환 · AI Engineer
+## 정세환
 
-RAG · Agent · MCP · Evaluation
+Python · SQL · RAG · Agent · MCP · Evaluation
 
-LLM이 맡을 판단과 코드가 맡을 계산을 나누고, 그 구성을 평가셋으로 비교해 고릅니다.
-
-### 대표 프로젝트
+### 프로젝트
 
 | 프로젝트 | 내용 | 결과 |
 |---|---|---|
