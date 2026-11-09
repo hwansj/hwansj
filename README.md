@@ -4,14 +4,16 @@ RAG · Agent · MCP · Evaluation
 
 LLM은 읽고 판단하고 코드는 계산하도록 나눈 뒤, 그 구성이 맞는지 평가셋으로 확인합니다.
 
-### 대표 프로젝트
+### 프로젝트
 
-| 프로젝트 | 내 역할 | 결과 |
-|---|---|---|
-| [triPilot 요식(Dining) 파트](https://github.com/hwansj/tripilot-dining) | 식당 판정 에이전트 설계·구현 — LLM은 조건 해석, 계산은 MCP 규칙 도구 | 검증용 333회 판정 정확도 98.5% (규칙만 79.3%) |
-| [에코봇](https://github.com/hwansj/SKN32-3rd-3Team) · [4차](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN32-4th-3Team) | 분리배출 안내 RAG 챗봇의 검색 파이프라인·성능평가 | 통과율 1위 대신 환각률이 가장 낮은 하이브리드 검색(6%) 채택, R@5 0.607 → 0.730 |
-| [Signal-T](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN32-2nd-1Team) | 팀장 · EDA · 다음 통신사 예측 모델 | 정확도 1위 대신 세 통신사를 고르게 맞히는 모델(macro F1) 선택, 강사 평가 95/100 |
-| [Research Agent](https://github.com/hwansj/research_agent_fastapi_mysql) | 강의 실습 프로젝트에 MySQL 보고서 저장 도구 추가 | 기존 도구 호출 구조를 바꾸지 않고 MCP 도구로 연동 |
+| | 프로젝트 | 내 역할 | 결과 |
+|---|---|---|---|
+| 01 | [triPilot · 멀티에이전트 여행 기획·지속 관리 시스템](https://github.com/hwansj/tripilot-dining) | Dining 에이전트 설계·구현 — LLM은 조건 해석, 계산·조회는 MCP 도구(규칙 6·조회 3) | 검증 일정 40개 · 확인 항목 111개 × 3회 판정 정확도 98.5% (규칙 기반 79.3%) |
+| 02 | [에코봇 분리배출 안내 RAG 챗봇](https://github.com/hwansj/SKN32-3rd-3Team) · [4차](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN32-4th-3Team) | 검색 파이프라인 구현 · 성능평가 | 평가셋 정답 오류 13건 교정 후 비교, 환각률이 가장 낮은 하이브리드 검색(6%) 채택, Recall@5 0.607 → 0.730 |
+| 03 | 소형 LLM 미세조정 · 서빙 실습 | 교재 기반 개인 실습 — RunPod GPU에서 Qwen2.5-0.5B QLoRA SFT · DPO, FastAPI 서빙 | DPO 평가 점수의 길이 편향을 찾아 토큰당 평균 로그 확률로 수정 |
+| 04 | [Research Agent DB 연동](https://github.com/hwansj/research_agent_fastapi_mysql) | 강의 실습 확장 — MySQL 보고서 저장 MCP 도구 · 'DB에 저장' 버튼 | 기존 도구 호출 엔드포인트를 재사용해 다른 기능의 호출 구조 유지 |
+
+그 외: [Signal-T 통신사 이탈 예측](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN32-2nd-1Team) — 팀장 · EDA · 다음 통신사 예측 모델
 
 ### 여러 프로젝트에서 지켜 온 기준
 
